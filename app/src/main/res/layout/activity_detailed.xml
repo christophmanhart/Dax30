@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity1">
+
+
+        <TextView
+            android:id="@+id/shareNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sharePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@+id/shareNameLabel"
+            android:gravity="end"
+            android:text="aktueller Kurs"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/shareBpsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareNameLabel"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Buchwert/Aktie"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shareBps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareNameLabel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@+id/shareNameLabel"
+            android:gravity="end"
+            android:text="aktuelles BPS"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/shareEpsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareBpsLabel"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Gewinn/Aktie"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shareEps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareBpsLabel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@+id/shareNameLabel"
+            android:gravity="end"
+            android:text="aktuelles EPS"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/shareFsvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareEpsLabel"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Fund.-Analyse"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shareFsv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareEpsLabel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@+id/shareNameLabel"
+            android:gravity="end"
+            android:text="aktuelles fSV"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/shareKgvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareFsvLabel"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="KGV"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shareKgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareFsvLabel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@+id/shareNameLabel"
+            android:gravity="end"
+            android:text="aktuelles KGV"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/shareChangeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareKgvLabel"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Heute"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shareChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareKgvLabel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@+id/shareChangeLabel"
+            android:gravity="end"
+            android:text="heutige Änderung"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareChangeLabel"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:touchscreenBlocksFocus="true">
+
+            <RadioButton
+                android:id="@+id/radioButtonIntraday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="H"
+                android:textColor="#000000"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonOneWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="1W"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioButtonOneMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="1M"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSixMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:onClick="checkButton"
+                android:text="6M"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioButtonOneYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="1J"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioButtonThreeYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="3J"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFiveYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="5J"
+                android:textColor="#000000" />
+
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/sharePic"
+            android:layout_width="362dp"
+            android:layout_height="218dp"
+            android:layout_below="@id/radioGroup"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY" />
+
+
+        <ImageView
+            android:id="@+id/shareNews"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/sharePic"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/nachrichten"/>
+
+    </RelativeLayout>
+</ScrollView>
