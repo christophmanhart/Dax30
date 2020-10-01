@@ -95,7 +95,7 @@ public class MainActivity1 extends AppCompatActivity {
                 }
             });
         }
-
+//      https://material.io/develop/android/components/bottom-navigation#using-bottom-navigation
 //        BottomNavigationView.OnNavigationItemSelectedListener { item ->
 //                when(item.itemId) {
 //            R.id.item1 -> {
