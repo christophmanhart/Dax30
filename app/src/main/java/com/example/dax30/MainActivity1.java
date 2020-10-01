@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -93,6 +95,21 @@ public class MainActivity1 extends AppCompatActivity {
                 }
             });
         }
+
+//        BottomNavigationView.OnNavigationItemSelectedListener { item ->
+//                when(item.itemId) {
+//            R.id.item1 -> {
+//                // Respond to navigation item 1 click
+//                true
+//            }
+//            R.id.item2 -> {
+//                // Respond to navigation item 2 click
+//                true
+//            }
+//        else -> false
+//        }
+//        }
+
 
 
         Timer timer = new Timer();
