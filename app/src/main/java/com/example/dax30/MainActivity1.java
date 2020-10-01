@@ -112,6 +112,11 @@ public class MainActivity1 extends AppCompatActivity {
 
     private void getUpdateSharePrice() throws IOException {
 
+        //if Abfrage, bei welcher dann die URL entschieden wird je nachdem auf welchem Tab man sich befindet
+        //final Document doc = Jsoup.connect("https://www.finanzen.net/aktien/mdax-realtimekurse").header("Cache-control", "no-cache").post();
+        //final Document doc = Jsoup.connect("https://www.finanzen.net/aktien/sdax-realtimekurse").header("Cache-control", "no-cache").post();
+        //final Document doc = Jsoup.connect("https://www.finanzen.net/aktien/tecdax-realtimekurse").header("Cache-control", "no-cache").post();
+
         final Document doc = Jsoup.connect("https://www.finanzen.net/aktien/dax-realtimekurse").header("Cache-control", "no-cache").post();
 
         for (final Share share : shares) {
